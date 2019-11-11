@@ -26,6 +26,8 @@
     <modules>
         <module>microservice-api</module>
         <module>provider-8001</module>
+        <module>provider-8002</module>
+        <module>provider-8003</module>
         <module>consumer-9001</module>
     </modules>
 
