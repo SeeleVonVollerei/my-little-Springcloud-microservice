@@ -29,6 +29,8 @@
         <module>provider-8002</module>
         <module>provider-8003</module>
         <module>consumer-9001</module>
+        <module>testredis-8004</module>
+        <module>restfulcrudtest</module>
     </modules>
 
     <dependencyManagement>

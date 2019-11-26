@@ -6,7 +6,8 @@
     <file url="file://$PROJECT_DIR$/microservice-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider-8001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider-8002" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/provider-8002" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider-8003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/restfulcrudtest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/testredis-8004" charset="UTF-8" />
   </component>
 </project>
