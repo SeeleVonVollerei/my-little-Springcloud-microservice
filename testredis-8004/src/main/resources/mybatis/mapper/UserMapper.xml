@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.seele.springcloud.dao.UserDao">
+
+    <insert id="addUser" parameterType="com.seele.springcloud.entities.User">
+        insert into
+        user(u_name, u_password, u_gender, u_age, u_email, db_source)
+        VALUES (#{u_name},#{u_password},#{u_gender},#{u_age},#{u_email},DATABASE());
+    </insert>
+
+    <delete id="deleteById" parameterType="java.lang.Long">
+        delete from
+        user
+        where
+        user_no=#{id};
+    </delete>
+
+    <update id="update" parameterType="com.seele.springcloud.entities.User">
+        update
+        user
+        set
+        u_name=#{u_name},u_password=#{u_password},u_gender=#{u_gender},u_age=#{u_age},u_email=#{u_email},db_source=DATABASE()
+        where
+        user_no=#{user_no};
+    </update>
+
+    <select id="findById" parameterType="java.lang.Long" resultType="com.seele.springcloud.entities.User">
+        select user_no,u_name, u_password, u_gender, u_age, u_email, db_source
+        from user
+        where user_no=#{id};
+    </select>
+
+    <select id="findAll" resultType="com.seele.springcloud.entities.User">
+        select user_no,u_name, u_password, u_gender, u_age, u_email, db_source
+        from user;
+    </select>
+</mapper>
